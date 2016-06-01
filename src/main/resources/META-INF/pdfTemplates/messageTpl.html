@@ -14,9 +14,10 @@
     </head>
 <body style="font-family: Liberation Serif;">
 
+<div th:replace="fragments/header :: header"></div>
 <div class="border">
     <h1 th:text="${message}">message</h1>
 </div>
-
+<div th:replace="fragments/footer :: footer">&copy; 2013 The Static Templates</div>
 </body>
 </html>

@@ -38,6 +38,7 @@ public class FlyingSoucerTestService {
 
 	    ClassPathResource regular = new ClassPathResource("/META-INF/fonts/LiberationSerif-Regular.ttf");
 	    fontResolver.addFont(regular.getURL().toString(), BaseFont.IDENTITY_H, true);
+	    renderer.getSharedContext().setReplacedElementFactory(new ImageReplacedElementFactory(renderer.getSharedContext().getReplacedElementFactory()));
 
 	    renderer.setDocumentFromString(htmlContent);
 	    renderer.layout();
