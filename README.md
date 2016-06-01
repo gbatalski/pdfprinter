@@ -10,5 +10,8 @@ The original idea stolen from:
 
 <http://stackoverflow.com/questions/23173485/flying-saucer-thymeleaf-and-spring>
 
+Image handling taken from
+<http://stackoverflow.com/questions/10316607/render-image-from-servlet-in-flyingsaucer-generated-pdf>
+
 # How to use it
 To see it working, one should run `mvn test` and check **/tmp/message.pdf** for resulting PDF.
